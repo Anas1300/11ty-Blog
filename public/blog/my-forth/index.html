@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Like everything needs to be secured</title>
+  </head>
+  <body>
+     <nav>
+  <div class="logo"></div>
+  <ul>
+    <li><a href="../../">Blog</a></li>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>  
+    
+
+
+<div class="container">
+  <main>
+    <div class="content">
+      <h5>STREET ART</h5>
+      <h1>Like everything needs to be secured</h1>
+      <div class="paragraphs">
+      <h2>🚩 Introduction</h2>
+<p>Hell yeah, that would be cool. 😎 So this is gonna be about <strong>fine-tuning your css</strong> designs in a manner that would make your <strong>pages load faster</strong> 🚀 as well as make your designs all <strong>browser compatible</strong>. 💻 And by all means, make your CSS production ready for getting the best out of your CSS. 🎉</p>
+<p>Yes, the above image is from the console and you can customize the text however you like. To know how keep reading till the end.</p>
+<p>It's been a while since my last post, it's because I got into learning some interesting stuff and undoubtedly writer's block was back. But recently, while working on a large repository that had a lot of stuff logged in the console I wanted a way to clear all the clutter and make my console statements stand out from the rest.</p>
+<p>Here is how I was able to do that and how you could too.</p>
+<p>So these are the possible options:</p>
+<ul>
+<li>Using different console methods</li>
+<li>Using various format specifiers (believe me, this is magic ✨)</li>
+</ul>
+<h2>Using different console methods</h2>
+<p>You might already know some of the basic ones, like:</p>
+<ul>
+<li>console.log</li>
+<li>console.info</li>
+<li>console.error</li>
+<li>console.warn</li>
+</ul>
+<h2>console.table</h2>
+<p>This can be used to log large nested objects or arrays so you don't have to go through expanding each key to view the whole thing.</p>
+<pre><code class="language-javascript">let peoples = [
+  {
+    name: &quot;Richard Hendricks&quot;,
+    location: &quot;Berkely&quot;,
+    cell: &quot;4254-024-8162&quot;,
+    age: 32,
+  },
+  {
+    name: &quot;Christiansen Frederikke&quot;,
+    location: &quot;Madras&quot;,
+    cell: &quot;4987-024-2562&quot;,
+    age: 34,
+  },
+  {
+    name: &quot;John Doe&quot;,
+    location: &quot;California&quot;,
+    cell: &quot;3143-344-342&quot;,
+    age: 53,
+  },
+];
+
+console.table(peoples);
+</code></pre>
+<h2>console.group and console.groupEnd</h2>
+<p>You can group a set of console logs having a particular meaning apart from the rest using this method.</p>
+<pre><code class="language-javascript">const title = &quot;Me and my boys&quot;;
+
+console.group(title);
+console.table(peoples[0]);
+console.info(&quot;Weather is very beautiful today ☁&quot;);
+console.warn(&quot;Don't fall for the beautiful weather&quot;);
+console.groupEnd(title);
+</code></pre>
+<h2>Using format specifiers</h2>
+<p>Believe it or not, console logs can be more than just simple messages. You can include an eye-catching message or something more convincing as your favorite dog image.</p>
+<p>All because you can use format specifiers inside them. How?</p>
+<h2>List of available format specifiers</h2>
+<ul>
+<li>%s ⇒ Formats as string</li>
+<li>%i ⇒ Formats as integer</li>
+<li>%f ⇒ Formats as float</li>
+<li>%O ⇒ Formats as object (yes that's capital O as in Oregano)</li>
+<li>%o ⇒ Formats as DOM element</li>
+<li>%c ⇒ Formats as CSS ✨</li>
+</ul>
+<h2>Formats as string, integer, float</h2>
+<pre><code class="language-javascript">console.log(
+  &quot;%s, told me that we're going to mall today with %s&quot;,
+  &quot;Alan&quot;,
+  &quot;Mike&quot;
+);
+// Alan, told me that we're going to mall today with Mike
+
+console.log(&quot;We had %i mangoes today&quot;, 56);
+// We had 56 mangoes today
+
+console.log(
+  &quot;Did you know, Tesla Model S can reach 0 to 60 mph in %f seconds?&quot;,
+  2.3
+);
+// Did you know, Tesla Model S can reach 0 to 60 mph in 2.3 seconds?
+</code></pre>
+<p>That's it, super easy! 😃</p>
+<h2>🤝Conclusion</h2>
+<p>For me, all that mattered was for the logs to stand out and be more catchy on pursuit of which I found out a ton of more cool stuff we can do, hope this gives you more clarity on the gem of a function, that console is.</p>
+
+
+      
+    </div>
+
+    
+  </main>
+</div>
+
+
+ 
+
+    <footer>
+    <span>&#169; 2021 by Jodie.<span>
+    <p>Theme <span>by</span> LekoArts</p>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+---
+title: Blog
+layout: base.njk
+---
+
+  
+<div class="container">
+
+  <main>
+    <div class="content">
+        {%- for post in collections.post | reverse -%}
+          <div class="post">
+          <a href="{{ post.url }}">
+            <p class="date">{{post.date | postDate}}</p>
+            <h1>{{ post.data.title }}</h1>
+            <p>{{post.data.description}}</p>
+          </a>
+        </div>
+        {%- endfor -%}
+
+
+        {# <div class="post">
+          <a href="./individual-article/index.html">
+            <p class="date"> 26 DECEMBER 2020</p>
+            <h1>Making your console log statements stand out</h1>
+            <p>Writing console logs with CSS and various methods that help visualize the contents of it easily and with less effort</p>
+          </a>
+        </div> #}
+    </div>
+  </main>
+</div>

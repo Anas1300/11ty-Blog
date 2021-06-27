@@ -1,0 +1,17 @@
+{
+  "name": "black",
+  "version": "1.0.0",
+  "description": "npm init -y\r npm install @11ty/eleventy",
+  "main": "eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
